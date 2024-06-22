@@ -10,7 +10,7 @@ const DataTransferItem = fs.readFileSync(
 const databar = JSON.parse(DataTransferItem);
 
 app.get("/", (req, res) => {
-  res.end(databar);
+  res.send(databar);
 });
 
 app.listen(port, () => {
