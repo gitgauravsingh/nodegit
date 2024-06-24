@@ -4,7 +4,7 @@ const port = 4000;
 const app = express();
 
 const DataTransferItem = fs.readFileSync(
-  `${__dirname}/data/data.json`,
+  `${__dirname}/data/data.json/`,
   "utf-8"
 );
 const databar = JSON.parse(DataTransferItem);
